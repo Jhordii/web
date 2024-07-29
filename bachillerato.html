@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachillerato</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function openSection(evt, sectionName) {
+            // Ocultar todas las secciones de contenido
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remover la clase "active" de todas las pestañas
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Mostrar la sección de contenido actual y añadir una clase "active" a la pestaña clicada
+            document.getElementById(sectionName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="media/logo.png" alt="logo de la compañia">
+            </a>
+            <nav>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Publicaciones</a>
+                    <ul class="dropdown">
+                        <li><a href="preescolar.html">Preescolar</a></li>
+                        <li><a href="primaria.html">Primaria</a></li>
+                        <li><a href="bachillerato.html">Bachillerato</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="nav-link">Contacto</a>
+                <a href="https://www.instagram.com/tu_empresa" target="_blank" class="nav-link">
+                    <img src="media/instagram.png" alt="Instagram" class="social-icon">
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="page-title">Bachillerato</h1>
+        <div class="tab">
+            <button class="tablinks" onclick="openSection(event, 'Espanol')">Español</button>
+            <button class="tablinks" onclick="openSection(event, 'ComprensionLectora')">Comprensión Lectora</button>
+            <button class="tablinks" onclick="openSection(event, 'Matematicas')">Matemáticas</button>
+            <button class="tablinks" onclick="openSection(event, 'Dibujo')">Dibujo</button>
+            <button class="tablinks" onclick="openSection(event, 'Naturales')">Naturales</button>
+            <button class="tablinks" onclick="openSection(event, 'Sociales')">Sociales</button>
+        </div>
+
+        <div id="Espanol" class="tabcontent">
+            <h2>Español</h2>
+            <p>Contenido de la sección de Español...</p>
+        </div>
+
+        <div id="ComprensionLectora" class="tabcontent">
+            <h2>Comprensión Lectora</h2>
+            <p>Contenido de la sección de Comprensión Lectora...</p>
+        </div>
+
+        <div id="Matematicas" class="tabcontent">
+            <h2>Matemáticas</h2>
+            <p>Contenido de la sección de Matemáticas...</p>
+        </div>
+
+        <div id="Dibujo" class="tabcontent">
+            <h2>Dibujo</h2>
+            <p>Contenido de la sección de Dibujo...</p>
+        </div>
+
+        <div id="Naturales" class="tabcontent">
+            <h2>Naturales</h2>
+            <p>Contenido de la sección de Naturales...</p>
+        </div>
+
+        <div id="Sociales" class="tabcontent">
+            <h2>Sociales</h2>
+            <p>Contenido de la sección de Sociales...</p>
+        </div>
+    </main>
+</body>
+</html>
