@@ -7,15 +7,14 @@
     <title>Dealcor</title>
 </head>
 <body>
-    <!-- Contenido de la página -->
     <header>
         <div class="container">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img src="media/logo.png" alt="logo de la compañia">
             </a>
             <nav>
                 <div class="nav-item">
-                    <a href="#" class="nav-link">Publicaciones</a>
+                    <a href="#" class="nav-link animated-link">Publicaciones</a>
                     <ul class="dropdown">
                         <li><a href="preescolar.html">Preescolar</a></li>
                         <li><a href="primaria.html">Primaria</a></li>
@@ -23,25 +22,35 @@
                     </ul>
                 </div>
                 <a href="#" class="nav-link">Contacto</a>
-                <a href="https://www.instagram.com/dealcor_educamos?igsh=d2lhZmdmaXBxcnJ1" target="_blank" class="nav-link">
+                <a href="https://www.instagram.com/tu_empresa" target="_blank" class="nav-link">
                     <img src="media/instagram.png" alt="Instagram" class="social-icon">
                 </a>
             </nav>
         </div>
     </header>
-    <section id="hero">
+    <div class="header-separator"></div>
+    <sections id="hero">
+        <h1>La educación es un compromiso de todos</h1>
         <div class="video-container">
-            <h1>La educación es un compromiso de todos</h1>
-            <video src="media/video.mp4" autoplay loop muted playsinline></video>
+            <video autoplay loop muted>
+                <source src="media/video.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
         </div>
+    </sections>
+    <section id="extra-video">
+        <video controls>
+            <source src="media/videoo.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
     </section>
     <section id="somos-pro">
         <div class="container">
             <div class="img-container">
-                <img src="media/video2.png" alt="Descripción de la imagen">
+                <img src="media/video2.png" alt="Somos Dealcor">
             </div>
             <div class="text-container">
-                <h2><span class="somos">Somos</span> <span class="edulcor">Edulcor Educamos</span></h2>
+                <h2 class="somos">Somos <span class="Dealcor">Dealcor Educamos</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laborum consequuntur vero culpa aliquam blanditiis at, voluptatum, aliquid provident nihil, similique cupiditate consectetur repudiandae possimus accusamus quo consequatur. Animi, laudantium!</p>
             </div>
         </div>
@@ -53,9 +62,9 @@
             <p class="footer-contact">Celular: 311 2948290</p>
             <p class="footer-location">Bogotá, Colombia</p>
         </div>
+        <a href="https://wa.me/3112948290" class="whatsapp-button" target="_blank">
+            <img src="media/whatsapp.png" alt="WhatsApp">
+        </a>
     </footer>
-    <a href="https://wa.me/3112948290" class="whatsapp-button" target="_blank">
-        <img src="media/whatsapp.png" alt="WhatsApp">
-    </a>
 </body>
 </html>
