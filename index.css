@@ -17,6 +17,13 @@ header {
     padding: 10px;
 }
 
+.header-separator {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -27,7 +34,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    margin-left: 20px; /* Mueve el logo un poco a la derecha */
+    margin-left: 20px;
 }
 
 .logo img {
@@ -37,7 +44,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    margin-left: auto; /* Asegura que la navegación se alinee a la derecha */
+    margin-left: auto;
 }
 
 nav a {
@@ -89,8 +96,8 @@ nav a:hover {
 }
 
 .social-icon {
-    width: 32px; /* Tamaño más grande para el ícono de Instagram */
-    height: 32px; /* Tamaño más grande para el ícono de Instagram */
+    width: 32px;
+    height: 32px;
 }
 
 @media (max-width: 600px) {
@@ -127,7 +134,16 @@ nav a:hover {
 #hero video {
     width: 100%;
     height: auto;
-    border-radius: 15px; /* Esquinas redondeadas solo para el video */
+}
+
+#extra-video {
+    text-align: center;
+    padding: 20px;
+}
+
+#extra-video video {
+    width: 80%;
+    height: auto;
 }
 
 #somos-pro {
@@ -148,7 +164,7 @@ nav a:hover {
 .img-container img {
     width: 100%;
     height: auto;
-    border-radius: 15px; /* Opcional: redondear las esquinas de la imagen */
+    border-radius: 15px;
 }
 
 .text-container {
@@ -184,7 +200,7 @@ nav a:hover {
 }
 
 footer {
-    background-color: rgb(142, 183, 211); /* Mismo color que el encabezado */
+    background-color: rgb(142, 183, 211);
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -229,11 +245,10 @@ footer {
     height: 40px;
 }
 
-/* Estilos para las pestañas */
 .page-title {
     text-align: center;
-    color: #002366; /* Azul oscuro */
-    font-family: 'Georgia', serif; /* Estilo de letra bonito */
+    color: #002366;
+    font-family: 'Georgia', serif;
     margin: 20px 0;
 }
 
@@ -241,7 +256,7 @@ footer {
     overflow: hidden;
     background-color: #f1f1f1;
     border: 1px solid #ccc;
-    text-align: center; /* Centrar las pestañas */
+    text-align: center;
 }
 
 .tab button {
@@ -252,17 +267,17 @@ footer {
     transition: background-color 0.3s ease;
     font-size: 17px;
     display: inline-block;
-    margin: 0 10px; /* Espacio entre botones */
-    color: black; /* Color de texto */
-    border-radius: 10px; /* Bordes redondeados */
+    margin: 0 10px;
+    color: black;
+    border-radius: 10px;
 }
 
 .tab button:hover {
-    filter: brightness(85%); /* Oscurecer el color de fondo al pasar el ratón */
+    filter: brightness(85%);
 }
 
 .tab button.active {
-    filter: brightness(70%); /* Oscurecer más el color de fondo para la pestaña activa */
+    filter: brightness(70%);
 }
 
 .tabcontent {
@@ -270,8 +285,8 @@ footer {
     padding: 20px;
     border: 1px solid #ccc;
     border-top: none;
-    text-align: center; /* Centrar el contenido de las pestañas */
-    animation: fadeEffect 0.5s; /* Animación de desvanecimiento */
+    text-align: center;
+    animation: fadeEffect 0.5s;
 }
 
 @keyframes fadeEffect {
@@ -279,7 +294,6 @@ footer {
     to {opacity: 1;}
 }
 
-/* Estilos para la sección de libros */
 .book-section {
     display: flex;
     flex-wrap: wrap;
@@ -320,4 +334,18 @@ footer {
 
 .book-item button:hover {
     background-color: #001a4d;
+}
+
+/* Animación para Publicaciones */
+.animated-link {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
 }
