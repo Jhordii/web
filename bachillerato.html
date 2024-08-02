@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachillerato</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function openSection(evt, sectionName) {
+            // Ocultar todas las secciones de contenido
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remover la clase "active" de todas las pestañas
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Mostrar la sección de contenido actual y añadir una clase "active" a la pestaña clicada
+            document.getElementById(sectionName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="media/logo.png" alt="logo de la compañia">
+            </a>
+            <nav>
+                <div class="nav-item">
+                    <a href="#" class="nav-link animated-link">Publicaciones</a>
+                    <ul class="dropdown">
+                        <li><a href="preescolar.html">Preescolar</a></li>
+                        <li><a href="primaria.html">Primaria</a></li>
+                        <li><a href="bachillerato.html">Bachillerato</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="nav-link">Contacto</a>
+                <a href="https://www.instagram.com/tu_empresa" target="_blank" class="nav-link">
+                    <img src="media/instagram.png" alt="Instagram" class="social-icon">
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="page-title">Bachillerato</h1>
+        <div class="tab">
+            <button class="tablinks" onclick="openSection(event, 'Espanol')" style="background-color: #FFCCCC;">Español</button>
+            <button class="tablinks" onclick="openSection(event, 'ComprensionLectora')" style="background-color: #FFE5CC;">Comprensión Lectora</button>
+            <button class="tablinks" onclick="openSection(event, 'Matematicas')" style="background-color: #FFFFCC;">Matemáticas</button>
+            <button class="tablinks" onclick="openSection(event, 'Dibujo')" style="background-color: #CCE5FF;">Dibujo</button>
+            <button class="tablinks" onclick="openSection(event, 'Naturales')" style="background-color: #CCFFE5;">Naturales</button>
+            <button class="tablinks" onclick="openSection(event, 'Sociales')" style="background-color: #CCFFCC;">Sociales</button>
+        </div>
+
+        <div id="Espanol" class="tabcontent">
+            <h2>Español</h2>
+            <div class="book-section">
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book2.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book3.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="ComprensionLectora" class="tabcontent">
+            <h2>Comprensión Lectora</h2>
+            <div class="book-section">
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Comprensión Lectora">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Comprensión Lectora.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book2.jpg" alt="Libro de Comprensión Lectora">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Comprensión Lectora.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book3.jpg" alt="Libro de Comprensión Lectora">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Comprensión Lectora.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="Matematicas" class="tabcontent">
+            <h2>Matemáticas</h2>
+            <div class="book-section">
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Matemáticas">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Matemáticas.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book2.jpg" alt="Libro de Matemáticas">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Matemáticas.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book3.jpg" alt="Libro de Matemáticas">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Matemáticas.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="Dibujo" class="tabcontent">
+            <h2>Dibujo</h2>
+            <div class="book-section">
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Dibujo">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Dibujo.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book2.jpg" alt="Libro de Dibujo">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Dibujo.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book3.jpg" alt="Libro de Dibujo">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Dibujo.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="Naturales" class="tabcontent">
+            <h2>Naturales</h2>
+            <div class="book-section">
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Naturales">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Naturales.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book2.jpg" alt="Libro de Naturales">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Naturales.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book3.jpg" alt="Libro de Naturales">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Naturales.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="Sociales" class="tabcontent">
+            <h2>Sociales</h2>
+            <div class="book-section">
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Sociales">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Sociales.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book2.jpg" alt="Libro de Sociales">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Sociales.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book3.jpg" alt="Libro de Sociales">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Sociales.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Español">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Español.</p>
+                    <button>Contenido</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

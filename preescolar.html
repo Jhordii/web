@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preescolar</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function openSection(evt, sectionName) {
+            // Ocultar todas las secciones de contenido
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remover la clase "active" de todas las pestañas
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Mostrar la sección de contenido actual y añadir una clase "active" a la pestaña clicada
+            document.getElementById(sectionName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="media/logo.png" alt="logo de la compañia">
+            </a>
+            <nav>
+                <div class="nav-item">
+                    <a href="#" class="nav-link animated-link">Publicaciones</a>
+                    <ul class="dropdown">
+                        <li><a href="preescolar.html">Preescolar</a></li>
+                        <li><a href="primaria.html">Primaria</a></li>
+                        <li><a href="bachillerato.html">Bachillerato</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="nav-link">Contacto</a>
+                <a href="https://www.instagram.com/tu_empresa" target="_blank" class="nav-link">
+                    <img src="media/instagram.png" alt="Instagram" class="social-icon">
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="page-title">Preescolar</h1>
+        <div class="tab">
+            <button class="tablinks" onclick="openSection(event, 'Juegos')" style="background-color: #FFCCCC;">Juegos</button>
+            <button class="tablinks" onclick="openSection(event, 'Colores')" style="background-color: #FFE5CC;">Colores</button>
+            <button class="tablinks" onclick="openSection(event, 'Numeros')" style="background-color: #FFFFCC;">Números</button>
+            <button class="tablinks" onclick="openSection(event, 'Lectura')" style="background-color: #E5FFCC;">Lectura</button>
+        </div>
+
+        <div id="Juegos" class="tabcontent">
+            <h2>Juegos</h2>
+            <div class="book-section">
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Juegos">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Juegos.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book2.jpg" alt="Libro de Juegos">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Juegos.</p>
+                    <button>Contenido</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="Colores" class="tabcontent">
+            <h2>Colores</h2>
+            <div class="book-section">
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Colores">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Colores.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book2.jpg" alt="Libro de Colores">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Colores.</p>
+                    <button>Contenido</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="Numeros" class="tabcontent">
+            <h2>Números</h2>
+            <div class="book-section">
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Números">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Números.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book2.jpg" alt="Libro de Números">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Números.</p>
+                    <button>Contenido</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="Lectura" class="tabcontent">
+            <h2>Lectura</h2>
+            <div class="book-section">
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Libro de Lectura">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Lectura.</p>
+                    <button>Contenido</button>
+                </div>
+                <div class="book-item">
+                    <img src="images/book2.jpg" alt="Libro de Lectura">
+                    <h3>Título del Libro</h3>
+                    <p>Información sobre el libro de Lectura.</p>
+                    <button>Contenido</button>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
